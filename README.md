@@ -62,7 +62,18 @@ VITE_APP_NAME="${APP_NAME}"
 
 ---
 
-### 3. Subir os containers com Sail
+### 3. Instalar dependências
+Rode:
+
+```bash
+composer install
+npm install
+php artisan key:generate
+```
+
+---
+
+### 4. Subir os containers com Sail
 Na raiz do projeto, rode:
 
 ```bash
@@ -72,17 +83,6 @@ Na raiz do projeto, rode:
 Isso vai iniciar:  
 - `laravel.test` → aplicação Laravel  
 - `mysql` → banco de dados MySQL  
-
----
-
-### 4. Instalar dependências
-Ainda com os containers rodando, rode:
-
-```bash
-./vendor/bin/sail composer install
-./vendor/bin/sail npm install
-./vendor/bin/sail artisan key:generate
-```
 
 ---
 
